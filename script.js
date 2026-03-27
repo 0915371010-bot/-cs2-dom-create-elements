@@ -15,15 +15,19 @@ function start() {
     document.body.appendChild(heading);
 
     let userName = prompt("What is your name?");
+    let userLastname = prompt("What is your last name?")
     console.log(userName);
+    console.log(userLastname);
+    addName(userName, userLastname);
 }
 
-function addName(newName){
+function addName(newName, userLastName){
     // 1. create h2
     let h2 = document.createElement("h2");
     
     //2. set styles and texts
-    h2.innerText = "newName";
-    h2.style.color = "black";
-    h2.style.fontFamily = "italic";
+    h2.innerText = newName + userLastName;
+    h2.style.color = "Red";
+    h2.style.fontStyle = "italic";
+    document.body.appendChild(h2);
 }
