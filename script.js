@@ -26,7 +26,7 @@ function addName(newName, userLastName){
     let h2 = document.createElement("h2");
     
     //2. set styles and texts
-    h2.innerText = newName + userLastName;
+    h2.innerText = userLastName + ", " + newName;
     h2.style.color = "Red";
     h2.style.fontStyle = "italic";
     document.body.appendChild(h2);
